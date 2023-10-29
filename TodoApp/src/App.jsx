@@ -31,11 +31,11 @@ function App() {
   }
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <h2>Loading...</h2>;
   }
 
   if (err) {
-    return <h1>Something went wrong...</h1>;
+    return <h2>Something went wrong...</h2>;
   }
 
 
@@ -47,10 +47,10 @@ function App() {
         userData.length > 0 &&
         userData.map((post) => (
           <div  key={post.id}>
-            <h2>
+            <h3>
             {post.id} { ` .   `}
             {post.title}
-            </h2>
+            </h3>
           </div>
         ))}
         <div className="btn">
